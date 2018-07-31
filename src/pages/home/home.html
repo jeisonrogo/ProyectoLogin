@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>Login</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+  
+       <ion-list>
+
+          <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input  [(ngModel)] = 'userName' type="text"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="alerta[0]">
+            <span item-start class = "alert">{{mjs_obli}}</span>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input [(ngModel)] = 'password' type="password"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="alerta[1]">
+            <span item-start class = "alert">{{mjs_obli}}</span>
+          </ion-item>
+        
+        </ion-list>
+
+      <button ion-button clear (click)="RecuPass()">Recuperar contraseña</button>
+      
+      <div padding>
+        <button ion-button  (click)="login()">Login</button>
+        <button ion-button  (click)="registro()">Registrar</button>
+      </div>
+    </ion-card-content>
+  </ion-card>   
+</ion-content>

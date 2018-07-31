@@ -1,0 +1,8 @@
+{
+  "name": "ProyectoLogin",
+  "app_id": "10fa204d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
